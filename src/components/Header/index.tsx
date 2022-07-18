@@ -1,9 +1,19 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import { Container, Navbar, Nav, NavItem, NavLink } from "reactstrap";
+import {
+  Container,
+  Navbar,
+  Collapse,
+  Nav,
+  NavItem,
+  NavLink,
+  NavbarToggler,
+} from "reactstrap";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -30,20 +40,23 @@ const Header = () => {
               className="logo"
             />
           </NavLink>
-          <Nav className="m-auto" navbar>
-            <NavItem>
-              <NavLink href="#home">Home</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#product">Produtos</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#service">Serviços</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#about">Sobre</NavLink>
-            </NavItem>
-          </Nav>
+          <NavbarToggler onClick={toggle} />
+          <Collapse isOpen={isOpen} navbar>
+            <Nav className="m-auto" navbar>
+              <NavItem>
+                <NavLink href="#home">Home</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#product">Produtos</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#service">Serviços</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#about">Sobre</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
         </Container>
       </Navbar>
     </div>
