@@ -21,7 +21,7 @@ const About = () => {
         <Row>
           <Col md={4}>
             <h2 className="font-weight-light line-height-1_6 text-dark mb-4">
-              INTEGRAÇÃO DE TECNOLOGIAS
+              Integração de Tecnologias
             </h2>
           </Col>
           <Col md={{ size: 7, offset: 1 }}>
