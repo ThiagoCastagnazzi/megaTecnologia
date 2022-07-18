@@ -29,7 +29,7 @@ const Hero = () => {
           </Col>
           <Col lg={6}>
             <Image
-              src="/images/home.png"
+              src="/images/home-mega.png"
               alt="Mega Foto"
               width={600}
               height={350}
