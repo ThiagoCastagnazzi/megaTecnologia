@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <div className={`header${sticky ? " sticky" : ""}`}>
       <Navbar light expand="md">
-        <Container>
+        <Container className="container-nav">
           <div className="navbar-collapse-menu">
             <NavbarBrand href="/">
               <Image
@@ -50,44 +50,6 @@ const Header = () => {
                 <NavLink href="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#feature">Features</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#service">Services</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#about">About</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Container>
-      </Navbar>
-    </div>
-  );
-};
-
-export default Header;
-
-/*
-<div className="sticky">
-      <Navbar light expand="md" className="nav">
-        <Container className="header-container">
-          <NavLink href="/" className="logo">
-            <Image
-              src="/images/mega_logo.png"
-              alt="logo"
-              width={150}
-              height={70}
-              className="logo"
-            />
-          </NavLink>
-          <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} navbar>
-            <Nav className="m-auto" navbar>
-              <NavItem>
-                <NavLink href="#home">Home</NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink href="#product">Produtos</NavLink>
               </NavItem>
               <NavItem>
@@ -101,4 +63,7 @@ export default Header;
         </Container>
       </Navbar>
     </div>
-*/
+  );
+};
+
+export default Header;
