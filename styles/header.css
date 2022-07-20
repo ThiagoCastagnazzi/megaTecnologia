@@ -69,4 +69,10 @@
   .header .nav-item {
     padding-left: 30px;
   }
+
+  .navbar-nav {
+    width: 100vh;
+    height: 100vh;
+    padding-top: 20px;
+  }
 }
