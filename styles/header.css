@@ -45,12 +45,3 @@
   align-items: center;
   justify-content: space-between;
 }
-
-.navbar-toggle {
-  position: absolute;
-  right: 0;
-}
-
-.navbar-collapse {
-  flex-basis: 0;
-}
