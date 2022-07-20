@@ -3,7 +3,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 const Hero = () => {
   return (
-    <section className="section position-relative" id="home">
+    <section className="section" id="home">
       <Container className="container-section">
         <Row className="align-items-center">
           <Col lg={6}>
