@@ -8,6 +8,7 @@ import {
   NavItem,
   NavLink,
   NavbarToggler,
+  NavbarBrand,
 } from "reactstrap";
 
 const Header = () => {
@@ -29,6 +30,46 @@ const Header = () => {
 
   return (
     <div className={`header${sticky ? " sticky" : ""}`}>
+      <Navbar light expand="md">
+        <Container>
+          <div className="navbar-collapse-menu">
+            <NavbarBrand href="/">
+              <Image
+                src="/images/mega_logo.png"
+                alt="logo"
+                width={150}
+                height={70}
+                className="logo"
+              />
+            </NavbarBrand>
+            <NavbarToggler onClick={toggle} />
+          </div>
+          <Collapse isOpen={isOpen} navbar>
+            <Nav className="m-auto" navbar>
+              <NavItem>
+                <NavLink href="/">Home</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#feature">Features</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#service">Services</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#about">About</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Container>
+      </Navbar>
+    </div>
+  );
+};
+
+export default Header;
+
+/*
+<div className="sticky">
       <Navbar light expand="md" className="nav">
         <Container className="header-container">
           <NavLink href="/" className="logo">
@@ -60,7 +101,4 @@ const Header = () => {
         </Container>
       </Navbar>
     </div>
-  );
-};
-
-export default Header;
+*/
