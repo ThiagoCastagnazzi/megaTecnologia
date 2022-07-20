@@ -10,6 +10,7 @@
   line-height: 20px;
 }
 .header.sticky {
+  position: absolute;
   width: 100%;
   z-index: 1;
 }
