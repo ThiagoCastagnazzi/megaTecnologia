@@ -42,7 +42,7 @@
 
 .container-nav {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -66,8 +66,6 @@
   }
 
   .navbar-nav {
-    width: 100vh;
-    height: 100vh;
     padding-top: 20px;
   }
 }
