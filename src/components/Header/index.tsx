@@ -13,23 +13,10 @@ import {
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [sticky, setSticky] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  });
-
-  const handleScroll = () => {
-    if (window.scrollY > 90) {
-      setSticky(true);
-    } else if (window.scrollY < 90) {
-      setSticky(false);
-    }
-  };
-
   return (
-    <div className={`header${sticky ? " sticky" : ""}`}>
+    <div className="header sticky">
       <Navbar light expand="md">
         <Container className="container-nav">
           <div className="navbar-collapse-menu">
@@ -47,7 +34,7 @@ const Header = () => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="m-auto" navbar>
               <NavItem>
-                <NavLink href="/">Home</NavLink>
+                <NavLink href="#home">Home</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#product">Produtos</NavLink>

@@ -115,4 +115,5 @@ const Produto = () => {
     </section>
   );
 };
+
 export default Produto;

@@ -4,7 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 const Hero = () => {
   return (
     <section className="section position-relative" id="home">
-      <Container>
+      <Container className="container-section">
         <Row className="align-items-center">
           <Col lg={6}>
             <div className="pr-lg-5">
@@ -33,6 +33,7 @@ const Hero = () => {
               alt="Mega Foto"
               width={600}
               height={350}
+              className="hero-img"
             />
           </Col>
         </Row>
