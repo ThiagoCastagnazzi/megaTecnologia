@@ -10,8 +10,8 @@ const ProdutoBox = (props: any) => {
             key={key}
             className={
               produto.id === 1
-                ? "align-items-center"
-                : "align-items-center mt-5"
+                ? "align-items-center product-mobile-reverse"
+                : "align-items-center mt-5 product-mobile-reverse"
             }
           >
             <Col md={5}>
@@ -40,7 +40,7 @@ const ProdutoBox = (props: any) => {
             </Col>
           </Row>
         ) : (
-          <Row key={key} className="align-items-center mt-5">
+          <Row key={key} className="align-items-center mt-5 product-mobile">
             <Col md={6}>
               <div className="mb-4">
                 <div className="my-4">

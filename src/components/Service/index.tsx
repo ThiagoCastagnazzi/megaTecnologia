@@ -51,20 +51,22 @@ const Service = () => {
             </div>
           </Col>
         </Row>
-        <Row>
+        <Row className="service-card-row">
           {services.map((service, key) => (
-            <Col key={key} lg={4} md={6}>
+            <Col key={key} lg={4} md={6} className="service-card">
               <div>
-                <Image
-                  src={service.icon}
-                  alt={service.title}
-                  width={40}
-                  height={40}
-                />
-                <h5 className="text-dark font-weight-normal pt-1 mb-2">
-                  {service.title}
-                </h5>
-                <p className="text-muted mb-4">{service.desc}</p>
+                <div className="service-card-top">
+                  <Image
+                    src={service.icon}
+                    alt={service.title}
+                    width={40}
+                    height={40}
+                  />
+                  <h5 className="text-dark font-weight-normal pt-1 mb-2">
+                    {service.title}
+                  </h5>
+                </div>
+                <p className="text-muted mb-4 mt-2">{service.desc}</p>
               </div>
             </Col>
           ))}
