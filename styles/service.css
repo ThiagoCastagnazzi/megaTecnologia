@@ -24,6 +24,6 @@
   .service-card-row {
     margin: 0 auto;
     grid-template-columns: auto;
-    width: 400px;
+    width: fit-content;
   }
 }
