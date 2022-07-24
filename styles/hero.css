@@ -16,3 +16,17 @@
 .home-descrip-text {
   font-size: 1.1rem;
 }
+
+@media screen and (max-width: 768px) {
+  .hero-descrip-p {
+    font-size: 1.2rem;
+  }
+
+  .hero-descrip-title {
+    font-size: 3rem;
+  }
+
+  .home-descrip-text {
+    font-size: 0.9rem;
+  }
+}

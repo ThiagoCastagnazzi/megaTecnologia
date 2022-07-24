@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 const Footer = () => {
@@ -14,29 +15,71 @@ const Footer = () => {
   ];
 
   return (
-    <section className="footer section">
+    <section className="footer section" id="contact">
       <Container className="footer-container">
         <Row className="footer-adress-row">
           <Col>
             <Row>
               <Col>
                 <h6 className="text-dark mb-3 address-title">Nosso Endereço</h6>
-                <p className="text-muted f-14">
+                <div className="footer-address">
+                  <Image
+                    src="/icons/icon-address.png"
+                    width={50}
+                    height={50}
+                    alt="Endereço"
+                  />
                   R. Walter Hubacher, 1518 - Centro, Nova Andradina - MS,
                   79750-000
-                </p>
-                <h6 className="text-muted pb-2">
-                  Email: atendimento@megatecnologia.net.br
-                </h6>
-                <a
-                  className="whatsapp-link"
-                  href="https://web.whatsapp.com/send?phone=5567998304008"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <h6 className="text-muted pbg-2">WhatsApp: 67 9 9830-4008</h6>
-                </a>
-                <h6 className="text-muted pbg-2">Telefone: 67 3441-4008</h6>
+                </div>
+                <ul className="contact-list">
+                  <li>
+                    <a
+                      className="contact-list-link text-muted f-14"
+                      href="mailto: atendimento@megatecnologia.net.br"
+                    >
+                      <Image
+                        src="/icons/icon-email.png"
+                        width={30}
+                        height={30}
+                        alt="Email"
+                      />
+                      atendimento@megatecnologia.net.br
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="contact-list-link text-muted f-14"
+                      href="https://web.whatsapp.com/send?phone=5567998304008"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Image
+                        src="/icons/icon-wpp.png"
+                        width={30}
+                        height={30}
+                        alt="WhatsApp"
+                      />
+                      67 99830-4008
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="contact-list-link text-muted f-14"
+                      href="https://web.whatsapp.com/send?phone=5567998304008"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Image
+                        src="/icons/icon-tel.png"
+                        width={30}
+                        height={30}
+                        alt="Telefone"
+                      />
+                      67 3441-4008
+                    </a>
+                  </li>
+                </ul>
               </Col>
             </Row>
           </Col>
