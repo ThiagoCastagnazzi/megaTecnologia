@@ -16,10 +16,5 @@ a {
 }
 
 .section {
-  padding-top: 70px;
-  padding-bottom: 100px;
-}
-
-.container-section {
-  margin-top: 70px;
+  padding: 110px 0;
 }

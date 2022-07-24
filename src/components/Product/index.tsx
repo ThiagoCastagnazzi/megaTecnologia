@@ -33,9 +33,6 @@ const ProdutoBox = (props: any) => {
                   {produto.title}
                 </h5>
                 <p className="text-muted mb-3 f-15">{produto.desc}</p>
-                <a href={produto.link} className="f-16 text-warning">
-                  Saiba Mais <span className="right-icon ml-2">&#8594;</span>
-                </a>
               </div>
             </Col>
           </Row>
@@ -50,9 +47,6 @@ const ProdutoBox = (props: any) => {
                   {produto.title}
                 </h5>
                 <p className="text-muted mb-3 f-15">{produto.desc}</p>
-                <a href={produto.link} className="f-16 text-warning">
-                  Saiba Mais <span className="right-icon ml-2">&#8594;</span>
-                </a>
               </div>
             </Col>
             <Col md={{ size: 5, offset: 1 }} className="mt-5 mt-sm-0">
@@ -102,7 +96,7 @@ const Produto = () => {
           <Col lg={6} md={8}>
             <div className="title text-center mb-5">
               <h3 className="font-weight-normal text-dark">
-                <span className="text-warning">Produtos</span>
+                <span className="text-primary">Produtos</span>
               </h3>
               <p className="text-muted">
                 Oferemos produtos de ótima qualidade e de última geração.

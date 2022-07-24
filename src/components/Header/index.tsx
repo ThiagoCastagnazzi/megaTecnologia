@@ -16,11 +16,11 @@ const Header = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="header sticky">
+    <header className="header sticky">
       <Navbar light expand="md">
         <Container className="container-nav">
           <div className="navbar-collapse-menu">
-            <NavbarBrand href="/">
+            <NavbarBrand href="#home">
               <Image
                 src="/images/mega_logo.png"
                 alt="logo"
@@ -49,7 +49,7 @@ const Header = () => {
           </Collapse>
         </Container>
       </Navbar>
-    </div>
+    </header>
   );
 };
 

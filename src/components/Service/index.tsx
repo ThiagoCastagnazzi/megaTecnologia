@@ -42,7 +42,7 @@ const Service = () => {
           <Col lg={6} md={8}>
             <div className="title text-center mb-5">
               <h3 className="font-weight-normal text-dark">
-                <span className="text-warning">Serviços</span>
+                <span className="text-primary">Serviços</span>
               </h3>
               <p className="text-muted">
                 Ofereçemos serviços de alta eficiência com profissionais
