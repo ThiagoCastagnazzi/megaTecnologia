@@ -15,12 +15,12 @@ const Footer = () => {
 
   return (
     <section className="footer section">
-      <Container>
-        <Row>
-          <Col lg={8}>
+      <Container className="footer-container">
+        <Row className="footer-adress-row">
+          <Col>
             <Row>
-              <Col md={4}>
-                <h6 className="text-dark mb-3">Nosso Endereço</h6>
+              <Col>
+                <h6 className="text-dark mb-3 address-title">Nosso Endereço</h6>
                 <p className="text-muted f-14">
                   R. Walter Hubacher, 1518 - Centro, Nova Andradina - MS,
                   79750-000
@@ -28,25 +28,15 @@ const Footer = () => {
                 <h6 className="text-muted pb-2">
                   Email: atendimento@megatecnologia.net.br
                 </h6>
+                <a
+                  className="whatsapp-link"
+                  href="https://web.whatsapp.com/send?phone=5567998304008"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <h6 className="text-muted pbg-2">WhatsApp: 67 9 9830-4008</h6>
+                </a>
                 <h6 className="text-muted pbg-2">Telefone: 67 3441-4008</h6>
-                <h6 className="text-muted pbg-2">Celular: 67 9 9830-4008</h6>
-                <ul className="list-unstyled footer-social-list mt-4">
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="mdi mdi-facebook"></i>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="mdi mdi-instagram"></i>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="mdi mdi-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
               </Col>
             </Row>
           </Col>
