@@ -69,14 +69,14 @@ const Produto = () => {
   const products = [
     {
       id: 1,
-      img: "/images/products/moveis.jpg",
+      img: "/images/products/informatica.jpg",
       title: "Informática",
       desc: "Computadores, Mouses, Teclados, Fones de Ouvidos, WebCam, Cabos HDMI e VGA, Conversores e muito mais.",
       link: "/",
     },
     {
       id: 2,
-      img: "/images/products/moveis.jpg",
+      img: "/images/products/rede.jpg",
       title: "Infraestrutura de Rede",
       desc: "Roteadores, Repetidores, Antenas, Switchs e muito mais.",
       link: "/",
