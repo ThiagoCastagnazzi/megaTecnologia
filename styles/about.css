@@ -1,0 +1,21 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-descrip-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.about-descrip-container {
+  display: flex;
+  width: 100ch;
+  text-align: left;
+}
