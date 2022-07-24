@@ -24,7 +24,7 @@ const About = () => {
           </h2>
           <Col md={{ size: 7, offset: 1 }} className="about-descrip-container">
             <Row>
-              <Col md={6}>
+              <Col>
                 <p className="text-muted font-weight-light">
                   Há 15 anos no mercado, contamos com uma equipe preparada nas
                   áreas comercial, técnica e de desenvolvimento, voltada a
