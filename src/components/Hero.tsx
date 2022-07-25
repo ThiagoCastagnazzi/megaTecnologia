@@ -55,7 +55,13 @@ const Hero = () => {
         onExited={() => setAnimating(false)}
         onExiting={() => setAnimating(true)}
       >
-        <Image src={item.src} alt={item.altText} width={900} height={450} />
+        <Image
+          className="carouse-img"
+          src={item.src}
+          alt={item.altText}
+          width={800}
+          height={350}
+        />
       </CarouselItem>
     );
   });
@@ -80,7 +86,7 @@ const Hero = () => {
               residências, escritórios, empresas privadas e órgãos públicos.
             </p>
           </div>
-          <Col lg={7}>
+          <Col>
             <Carousel
               previous={previousButton}
               next={nextButton}
