@@ -50,7 +50,7 @@ const Produto = () => {
     {
       id: 8,
       img: "/images/products/ESCRITORIO.png",
-      title: "Móveis para Escritório",
+      title: "Móveis Escritório",
     },
   ];
   return (
