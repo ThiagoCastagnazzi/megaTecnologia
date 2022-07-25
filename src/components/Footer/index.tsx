@@ -66,7 +66,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="contact-list-link text-muted f-14"
-                      href="https://web.whatsapp.com/send?phone=5567998304008"
+                      href="tel:6734414008"
                       target="_blank"
                       rel="noreferrer"
                     >
