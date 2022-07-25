@@ -7,7 +7,7 @@ const About = () => {
         <Row className="justify-content-center">
           <Col lg={6} md={8}>
             <div className="title text-center mb-5">
-              <h3 className="font-weight-normal text-dark">
+              <h3 className="font-weight-normal text-dark text-subtitle">
                 Quem <span className="text-primary">Somos</span>
               </h3>
               <p className="text-muted">
@@ -19,7 +19,7 @@ const About = () => {
           </Col>
         </Row>
         <Row className="about-descrip-row">
-          <h2 className="font-weight-light line-height-1_6 text-dark mb-4">
+          <h2 className="font-weight-light line-height-1_6 text-dark mb-4 text-subtitle">
             Integração de <span className="text-primary">Tecnologias</span>
           </h2>
           <Col md={{ size: 7, offset: 1 }} className="about-descrip-container">

@@ -1,15 +1,15 @@
-@media screen and (max-width: 768px) {
-  .product-mobile-reverse {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-  }
+.card-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
 
-  .produt-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+.card {
+  background-color: rgb(187, 184, 184);
+  box-shadow: inset 0 5rem 5rem #fff;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
 }

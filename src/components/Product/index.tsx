@@ -1,92 +1,56 @@
 import Image from "next/image";
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
-const ProdutoBox = (props: any) => {
-  return (
-    <>
-      {props.products.map((produto: any, key: any) =>
-        produto.id % 2 !== 0 ? (
-          <Row
-            key={key}
-            className={
-              produto.id === 1
-                ? "align-items-center product-mobile-reverse"
-                : "align-items-center mt-5 product-mobile-reverse"
-            }
-          >
-            <Col md={5}>
-              <div>
-                <Image
-                  src={produto.img}
-                  alt={produto.title}
-                  width={400}
-                  height={168}
-                />
-              </div>
-            </Col>
-            <Col md={{ size: 6, offset: 1 }}>
-              <div className="mt-5 mt-sm-0 mb-4">
-                <div className="my-4">
-                  <i className={produto.icon}></i>
-                </div>
-                <h5 className="text-dark font-weight-normal mb-3 pt-3">
-                  {produto.title}
-                </h5>
-                <p className="text-muted mb-3 f-15">{produto.desc}</p>
-              </div>
-            </Col>
-          </Row>
-        ) : (
-          <Row key={key} className="align-items-center mt-5 product-mobile">
-            <Col md={6}>
-              <div className="mb-4">
-                <div className="my-4">
-                  <i className="mdi mdi-account-group"></i>
-                </div>
-                <h5 className="text-dark font-weight-normal mb-3 pt-3">
-                  {produto.title}
-                </h5>
-                <p className="text-muted mb-3 f-15">{produto.desc}</p>
-              </div>
-            </Col>
-            <Col md={{ size: 5, offset: 1 }} className="mt-5 mt-sm-0">
-              <div>
-                <Image
-                  src={produto.img}
-                  alt={produto.title}
-                  width={400}
-                  height={168}
-                />
-              </div>
-            </Col>
-          </Row>
-        )
-      )}
-    </>
-  );
+import { Container, Row, Col, Card, CardBody, CardTitle } from "reactstrap";
+
+type ProductProps = {
+  title: string;
+  img: string;
+  id: number;
 };
+
 const Produto = () => {
   const products = [
     {
       id: 1,
-      img: "/images/products/informatica.jpg",
-      title: "Informática",
-      desc: "Computadores, Mouses, Teclados, Fones de Ouvidos, WebCam, Cabos HDMI e VGA, Conversores e muito mais.",
-      link: "/",
+      img: "/images/products/COMPUTADORES.png",
+      title: "Computadores",
     },
     {
       id: 2,
-      img: "/images/products/rede.jpg",
-      title: "Infraestrutura de Rede",
-      desc: "Roteadores, Repetidores, Antenas, Switchs e muito mais.",
-      link: "/",
+      img: "/images/products/HARDWARE.png",
+      title: "Hardware",
     },
     {
       id: 3,
-      img: "/images/products/moveis.jpg",
+      img: "/images/products/PERIFERICOS.png",
+      title: "Periféricos",
+    },
+    {
+      id: 4,
+      img: "/images/products/IMPRESSORA.png",
+      title: "Impressoras",
+    },
+    {
+      id: 5,
+      img: "/images/products/CONECTIVIDADE.png",
+      title: "Conectividade",
+    },
+
+    {
+      id: 6,
+      img: "/images/products/TELEFONIA-FIXA.png",
+      title: "Telefones",
+    },
+    {
+      id: 7,
+      img: "/images/products/CFTV.png",
+      title: "CFTV",
+    },
+
+    {
+      id: 8,
+      img: "/images/products/ESCRITORIO.png",
       title: "Móveis para Escritório",
-      desc: "Cadeiras, Mesas, Armários, Cofres e muito mais.",
-      link: "/",
     },
   ];
   return (
@@ -104,7 +68,22 @@ const Produto = () => {
             </div>
           </Col>
         </Row>
-        <ProdutoBox products={products} />
+        <Container className="card-container">
+          {products.map((product: ProductProps) => (
+            <Card key={product.id}>
+              <CardBody>
+                <CardTitle>{product.title}</CardTitle>
+                <Image
+                  src={product.img}
+                  alt={product.title}
+                  width={210}
+                  height={132}
+                  quality={100}
+                />
+              </CardBody>
+            </Card>
+          ))}
+        </Container>
       </Container>
     </section>
   );
