@@ -17,6 +17,9 @@
 }
 
 @media screen and (max-width: 475px) {
+  .card-body {
+    padding: 0.5rem;
+  }
   .card-container {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
